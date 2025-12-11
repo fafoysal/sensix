@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENSI X - Payment Methods</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="protection.js"></script>
+  </head>
+  <body>
+    <!-- BACK BUTTON -->
+    <button class="back-btn" onclick="window.history.back()">← Back</button>
+
+    <!-- HEADER -->
+    <header>
+      <h1>SENSI X</h1>
+      <p>Payment Methods</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="payment-container">
+        <div class="payment-title">
+          <h2>Choose Payment Method</h2>
+          <p>Secure and Fast Payment Options</p>
+        </div>
+
+        <div class="payment-grid">
+          <!-- Bkash -->
+          <div class="payment-card-wrapper">
+            <div class="payment-card-border"></div>
+            <div class="payment-card">
+              <div class="payment-icon">📱</div>
+              <div class="payment-name">bKash</div>
+              <div class="payment-desc">Mobile Banking Bangladesh</div>
+              <button
+                class="payment-btn"
+                onclick="showPaymentModal('bKash', '📱')"
+              >
+                Select Method
+              </button>
+            </div>
+          </div>
+
+          <!-- Nagad -->
+          <div class="payment-card-wrapper">
+            <div class="payment-card-border"></div>
+            <div class="payment-card">
+              <div class="payment-icon">💳</div>
+              <div class="payment-name">Nagad</div>
+              <div class="payment-desc">Fast Digital Payment</div>
+              <button
+                class="payment-btn"
+                onclick="showPaymentModal('Nagad', '💳')"
+              >
+                Select Method
+              </button>
+            </div>
+          </div>
+
+          <!-- Rocket -->
+          <div class="payment-card-wrapper">
+            <div class="payment-card-border"></div>
+            <div class="payment-card">
+              <div class="payment-icon">🚀</div>
+              <div class="payment-name">Rocket</div>
+              <div class="payment-desc">Robi Mobile Banking</div>
+              <button
+                class="payment-btn"
+                onclick="showPaymentModal('Rocket', '🚀')"
+              >
+                Select Method
+              </button>
+            </div>
+          </div>
+
+          <!-- ELECTRIC BORDER MESSAGE BOX -->
+          <div class="payment-info">
+            <div class="payment-info-inner">
+              <strong>⚠️ Important Note</strong>
+              <div>
+                All transactions are secure and encrypted. After selecting a
+                payment method, you will be directed to complete your purchase
+                securely. For any issues, contact support via Discord or
+                WhatsApp.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- PAYMENT MODAL -->
+    <div class="modal-overlay" id="paymentModal">
+      <div class="payment-modal">
+        <div class="payment-modal-content">
+          <button class="close-btn" onclick="closePaymentModal()">×</button>
+          <span class="modal-icon" id="modalIcon">📱</span>
+          <div class="modal-title" id="modalTitle">bKash</div>
+          <div class="modal-method" id="modalMethod">
+            Payment Method Selected
+          </div>
+          <div class="modal-divider"></div>
+          <div class="modal-desc" id="modalDesc">
+            You have selected this payment method. Click continue to proceed
+            with the payment process or contact us for support.
+          </div>
+          <button class="modal-btn" onclick="continuePayment()">
+            Continue Payment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>DEV: FOYSAL</p>
+    </footer>
+
+    <script>
+      function showPaymentModal(methodName, icon) {
+        document.getElementById("modalIcon").textContent = icon;
+        document.getElementById("modalTitle").textContent = methodName;
+        document.getElementById(
+          "modalMethod"
+        ).textContent = `${methodName} Selected`;
+        document.getElementById("paymentModal").classList.add("active");
+      }
+
+      function closePaymentModal() {
+        document.getElementById("paymentModal").classList.remove("active");
+      }
+
+      function continuePayment() {
+        const methodName = document.getElementById("modalTitle").textContent;
+        alert(`01955952991 ${methodName} payment...`);
+        closePaymentModal();
+      }
+
+      // Close modal when clicking outside
+      document
+        .getElementById("paymentModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            closePaymentModal();
+          }
+        });
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closePaymentModal();
+        }
+      });
+
+      // Add ripple effect to payment cards
+      document.querySelectorAll(".payment-card-wrapper").forEach((card) => {
+        card.addEventListener("click", function (e) {
+          const ripple = document.createElement("span");
+          ripple.style.position = "absolute";
+          ripple.style.pointerEvents = "none";
+          ripple.style.width = ripple.style.height = "20px";
+          ripple.style.background = "rgba(255, 255, 255, 0.6)";
+          ripple.style.borderRadius = "50%";
+          ripple.style.transform = "scale(0)";
+          ripple.style.animation = "rippleEffect 0.6s ease-out";
+          ripple.style.left = e.offsetX + "px";
+          ripple.style.top = e.offsetY + "px";
+          ripple.style.zIndex = "10";
+
+          this.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 600);
+        });
+      });
+    </script>
+
+    <style>
+      @keyframes rippleEffect {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+      }
+    </style>
+  </body>
+</html>

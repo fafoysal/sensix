@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENSI X - 100% ANTIBAN PANEL FOR PC</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="protection.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>SENSI X</h1>
+      <p>100% ANTIBAN PANEL FOR PC</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="main-container card-1">
+          <svg class="svg-container" width="0" height="0">
+            <defs>
+              <filter
+                id="turbulent-displace-1"
+                colorInterpolationFilters="sRGB"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise1"
+                  seed="1"
+                />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                  <animate
+                    attributeName="dy"
+                    values="0; 100; 0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise2"
+                  seed="2"
+                />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                  <animate
+                    attributeName="dy"
+                    values="100; 0; 100"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise3"
+                  seed="3"
+                />
+                <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                  <animate
+                    attributeName="dx"
+                    values="0; 80; 0"
+                    dur="7s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feComposite
+                  in="offsetNoise1"
+                  in2="offsetNoise2"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="verticalCombine"
+                />
+                <feComposite
+                  in="offsetNoise3"
+                  in2="offsetNoise3"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="horizontalCombine"
+                />
+                <feBlend
+                  in="verticalCombine"
+                  in2="horizontalCombine"
+                  mode="lighten"
+                  result="combinedNoise"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="combinedNoise"
+                  scale="15"
+                  xChannelSelector="R"
+                  yChannelSelector="B"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer"></div>
+              <div class="main-card"></div>
+            </div>
+            <div class="glow-layer-1"></div>
+            <div class="glow-layer-2"></div>
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+            <div class="content-container">
+              <div class="content-top">
+                <div class="scrollbar-glass">V1</div>
+                <p class="title">AIMBOT</p>
+              </div>
+              <hr class="divider" />
+              <div class="content-bottom">
+                <p class="description">
+               <p style="color: rgb(247, 243, 243);">1 OBB — $5</p>
+                <p style="color: rgb(246, 241, 241);">Lifetime —  $10</p>
+                </p>
+                <br />
+                <p class="description">
+                  <p style="color: red;">✓ 100% Head Rate</p> 
+                  <p style="color: red;">✓ Enemy Location </p> 
+                  <p style="color: red;">✓ Key Bind System</p> 
+                  
+                </p>
+                <br />
+                <p class="description">
+                  Per 1OB Update FREE − 2$.
+                </p>
+                <button class="card-button" onclick="openModal('Aimbot')">
+                  Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="main-container card-2">
+          <svg class="svg-container" width="0" height="0">
+            <defs>
+              <filter
+                id="turbulent-displace-2"
+                colorInterpolationFilters="sRGB"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise1"
+                  seed="4"
+                />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                  <animate
+                    attributeName="dy"
+                    values="0; 100; 0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise2"
+                  seed="5"
+                />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                  <animate
+                    attributeName="dy"
+                    values="100; 0; 100"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise3"
+                  seed="6"
+                />
+                <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                  <animate
+                    attributeName="dx"
+                    values="0; 80; 0"
+                    dur="7s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feComposite
+                  in="offsetNoise1"
+                  in2="offsetNoise2"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="verticalCombine"
+                />
+                <feComposite
+                  in="offsetNoise3"
+                  in2="offsetNoise3"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="horizontalCombine"
+                />
+                <feBlend
+                  in="verticalCombine"
+                  in2="horizontalCombine"
+                  mode="lighten"
+                  result="combinedNoise"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="combinedNoise"
+                  scale="15"
+                  xChannelSelector="R"
+                  yChannelSelector="B"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer"></div>
+              <div class="main-card"></div>
+            </div>
+            <div class="glow-layer-1"></div>
+            <div class="glow-layer-2"></div>
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+            <div class="content-container">
+              <div class="content-top">
+                <div class="scrollbar-glass">Pro</div>
+                <p class="title">PREMIUM</p>
+              </div>
+              <hr class="divider" />
+              <div class="content-bottom">
+
+               <p class="description">
+               <p style="color: rgb(247, 243, 243);">1 Month — $5</p>
+                <p style="color: rgb(246, 242, 242);">6 Month — $10 </p> 
+                <p style="color: rgb(246, 241, 241);">Lifetime — $25</p>
+                </p> 
+
+                <p class="description">
+                  <p style="color: red;">✓ 100% Head Rate</p> 
+                  <p style="color: red;">✓ Enemy Location </p> 
+                  <p style="color: red;">✓ Sniper All System</p> 
+                  <p style="color: red;">✓ Wall/Speed/Camera </p>
+                  <p style="color: red;">✓ Key Bind System </p> 
+                </p>
+
+                <p class="description">
+                  Per 1OB Update FREE − 3$.
+                </p>
+
+                <button class="card-button" onclick="openModal('ESP Vision')">
+                  Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="main-container card-3">
+          <svg class="svg-container" width="0" height="0">
+            <defs>
+              <filter
+                id="turbulent-displace-3"
+                colorInterpolationFilters="sRGB"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise1"
+                  seed="7"
+                />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                  <animate
+                    attributeName="dy"
+                    values="0; 100; 0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise2"
+                  seed="8"
+                />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                  <animate
+                    attributeName="dy"
+                    values="100; 0; 100"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise3"
+                  seed="9"
+                />
+                <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                  <animate
+                    attributeName="dx"
+                    values="0; 80; 0"
+                    dur="7s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feComposite
+                  in="offsetNoise1"
+                  in2="offsetNoise2"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="verticalCombine"
+                />
+                <feComposite
+                  in="offsetNoise3"
+                  in2="offsetNoise3"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="horizontalCombine"
+                />
+                <feBlend
+                  in="verticalCombine"
+                  in2="horizontalCombine"
+                  mode="lighten"
+                  result="combinedNoise"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="combinedNoise"
+                  scale="15"
+                  xChannelSelector="R"
+                  yChannelSelector="B"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer"></div>
+              <div class="main-card"></div>
+            </div>
+            <div class="glow-layer-1"></div>
+            <div class="glow-layer-2"></div>
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+            <div class="content-container">
+              <div class="content-top">
+                <div class="scrollbar-glass">V1</div>
+                <p class="title">SNIPER</p>
+              </div>
+              <hr class="divider" />
+              <div class="content-bottom">
+                 <p class="description">
+               <p style="color: rgb(247, 243, 243);">1 OBB —   $6</p>
+                <p style="color: rgb(246, 241, 241);">Lifetime — $13</p>
+                </p> <br>
+
+                <p class="description">
+                  <p style="color: red;">✓ 100% Head Rate</p> 
+                  <p style="color: red;">✓ Enemy Location </p> 
+                  <p style="color: red;">✓ Sniper All System</p>
+                </p> <br>
+
+                <p class="description">
+                  Per 1OB Update FREE − 2$.
+                </p>
+                <button class="card-button" onclick="openModal('Wallhack')">
+                  Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="main-container card-4">
+          <svg class="svg-container" width="0" height="0">
+            <defs>
+              <filter
+                id="turbulent-displace-4"
+                colorInterpolationFilters="sRGB"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise1"
+                  seed="10"
+                />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                  <animate
+                    attributeName="dy"
+                    values="0; 100; 0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise2"
+                  seed="11"
+                />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                  <animate
+                    attributeName="dy"
+                    values="100; 0; 100"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise3"
+                  seed="12"
+                />
+                <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                  <animate
+                    attributeName="dx"
+                    values="0; 80; 0"
+                    dur="7s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feComposite
+                  in="offsetNoise1"
+                  in2="offsetNoise2"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="verticalCombine"
+                />
+                <feComposite
+                  in="offsetNoise3"
+                  in2="offsetNoise3"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="horizontalCombine"
+                />
+                <feBlend
+                  in="verticalCombine"
+                  in2="horizontalCombine"
+                  mode="lighten"
+                  result="combinedNoise"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="combinedNoise"
+                  scale="15"
+                  xChannelSelector="R"
+                  yChannelSelector="B"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer"></div>
+              <div class="main-card"></div>
+            </div>
+            <div class="glow-layer-1"></div>
+            <div class="glow-layer-2"></div>
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+            <div class="content-container">
+              <div class="content-top">
+                <div class="scrollbar-glass">Hide</div>
+                <p class="title">STREAMER</p>
+              </div>
+              <hr class="divider" />
+              <div class="content-bottom">
+                <p class="description">
+                <p style="color: rgb(246, 241, 241);">Lifetime —  $35</p>
+                </p> <br>
+
+                <p class="description">
+                  <p style="color: red;">✓ 100% Head Rate</p>
+                  <p style="color: red;">✓ Control From Mobile</p> 
+                  <p style="color: red;">✓ Streamer Esp </p> 
+                  <p style="color: red;">✓ Hide from pc</p> 
+                </p> <br>
+
+                <p class="description">
+                  Per 1OB Update FREE − 5$.
+                </p>
+                <button class="card-button" onclick="openModal('No Recoil')">
+                  Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="main-container card-5">
+          <svg class="svg-container" width="0" height="0">
+            <defs>
+              <filter
+                id="turbulent-displace-5"
+                colorInterpolationFilters="sRGB"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise1"
+                  seed="13"
+                />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                  <animate
+                    attributeName="dy"
+                    values="0; 100; 0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise2"
+                  seed="14"
+                />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                  <animate
+                    attributeName="dy"
+                    values="100; 0; 100"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise3"
+                  seed="15"
+                />
+                <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                  <animate
+                    attributeName="dx"
+                    values="0; 80; 0"
+                    dur="7s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feComposite
+                  in="offsetNoise1"
+                  in2="offsetNoise2"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="verticalCombine"
+                />
+                <feComposite
+                  in="offsetNoise3"
+                  in2="offsetNoise3"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="horizontalCombine"
+                />
+                <feBlend
+                  in="verticalCombine"
+                  in2="horizontalCombine"
+                  mode="lighten"
+                  result="combinedNoise"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="combinedNoise"
+                  scale="15"
+                  xChannelSelector="R"
+                  yChannelSelector="B"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer"></div>
+              <div class="main-card"></div>
+            </div>
+            <div class="glow-layer-1"></div>
+            <div class="glow-layer-2"></div>
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+            <div class="content-container">
+              <div class="content-top">
+                <div class="scrollbar-glass">MOBILE</div>
+                <p class="title">BYPASS</p>
+              </div>
+              <hr class="divider" />
+              <div class="content-bottom">
+                 <p class="description">
+               <p style="color: rgb(247, 243, 243);">1 OBB — $7</p>
+                
+                <p style="color: rgb(246, 241, 241);">Lifetime —  $15</p>
+                </p> <br>
+
+                <p class="description">
+                  <p style="color: red;">✓ Emulator Bypass</p> 
+                  <p style="color: red;">✓ Pc To Mobile Convert </p> 
+                  <p style="color: red;">✓ Anticheat System</p> 
+                </p> <br>
+
+                <p class="description">
+                  Per 1OB Update FREE − 2$.
+                </p>
+                <button class="card-button" onclick="openModal('Speed Hack')">
+                  Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="main-container card-6">
+          <svg class="svg-container" width="0" height="0">
+            <defs>
+              <filter
+                id="turbulent-displace-6"
+                colorInterpolationFilters="sRGB"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+              >
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise1"
+                  seed="16"
+                />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                  <animate
+                    attributeName="dy"
+                    values="0; 100; 0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise2"
+                  seed="17"
+                />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                  <animate
+                    attributeName="dy"
+                    values="100; 0; 100"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.025"
+                  numOctaves="8"
+                  result="noise3"
+                  seed="18"
+                />
+                <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                  <animate
+                    attributeName="dx"
+                    values="0; 80; 0"
+                    dur="7s"
+                    repeatCount="indefinite"
+                  />
+                </feOffset>
+                <feComposite
+                  in="offsetNoise1"
+                  in2="offsetNoise2"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="verticalCombine"
+                />
+                <feComposite
+                  in="offsetNoise3"
+                  in2="offsetNoise3"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                  result="horizontalCombine"
+                />
+                <feBlend
+                  in="verticalCombine"
+                  in2="horizontalCombine"
+                  mode="lighten"
+                  result="combinedNoise"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="combinedNoise"
+                  scale="15"
+                  xChannelSelector="R"
+                  yChannelSelector="B"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer"></div>
+              <div class="main-card"></div>
+            </div>
+            <div class="glow-layer-1"></div>
+            <div class="glow-layer-2"></div>
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+            <div class="content-container">
+              <div class="content-top">
+                <div class="scrollbar-glass">Mega</div>
+                <p class="title">Aimbot + Bypass Emulator</p>
+              </div>
+              <hr class="divider" />
+              <div class="content-bottom">
+                <p class="description">
+               <p style="color: rgb(247, 243, 243);">1 OBB — $10</p>
+                <p style="color: rgb(246, 241, 241);">Lifetime —  $20</p>
+                </p> <br>
+
+                <p class="description">
+                  <p style="color: red;">✓ Headshot + location</p> 
+                  <p style="color: red;">✓ Pc To Mobile Convert </p> 
+                  <p style="color: red;">✓ Key Bind System</p> 
+                </p> <br>
+
+                <p class="description">
+                  Per 1OB Update FREE − 3$.
+                </p>
+                <button class="card-button" onclick="openModal('Radar Hack')">
+                  Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </main>
+
+    <!-- MODAL/MESSAGE BOX -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box">
+        <div class="modal-border"></div>
+        <div class="modal-glow"></div>
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="modalTitle">Feature Name</div>
+            <div class="modal-subtitle">Get Access</div>
+          </div>
+
+          <div class="modal-divider"></div>
+
+          <div class="contact-section">
+            <div class="contact-label">📞 Contact Us</div>
+            <div class="contact-buttons">
+              <button class="contact-btn whatsapp" onclick="contactWhatsApp()">
+                💬 WhatsApp
+              </button>
+              <button class="contact-btn discord" onclick="contactDiscord()">
+                🎮 Discord
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-divider"></div>
+
+          <div class="contact-section">
+            <div class="contact-label">💳 Payment Method</div>
+            <button class="contact-btn payment" onclick="openPaymentPage()">
+              💰 View All Methods
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        DEV:
+        <a href="https://www.facebook.com/samp.foysal/"> FOYSAL </a>
+      </p>
+    </footer>
+
+    <script>
+      function openModal(featureName) {
+        document.getElementById("modalTitle").textContent = featureName;
+        document.getElementById("modalOverlay").classList.add("active");
+      }
+
+      function closeModal() {
+        document.getElementById("modalOverlay").classList.remove("active");
+      }
+
+      function contactWhatsApp() {
+        // Replace with your WhatsApp number
+        const phoneNumber = "01955952991"; // Example: Country Code + Number
+        const message = encodeURIComponent(
+          "Hello! I am interested in " +
+            document.getElementById("modalTitle").textContent
+        );
+        window.open(`https://wa.me/01955952991`, "_blank");
+      }
+
+      function contactDiscord() {
+        // Replace with your Discord server invite link
+        window.open("https://discord.gg/dD2bjHAfUj", "_blank");
+      }
+
+      function openPaymentPage() {
+        window.location.href = "payment.html";
+      }
+
+      // Close modal when clicking outside
+      document
+        .getElementById("modalOverlay")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            closeModal();
+          }
+        });
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+    </script>
+  </body>
+</html>
