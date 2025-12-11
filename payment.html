@@ -112,6 +112,29 @@
       </div>
     </div>
 
+    <!-- DUE IMAGES MODAL -->
+    <div class="modal-overlay" id="dueModal">
+      <div class="due-modal">
+        <div class="due-modal-content">
+          <button class="close-btn" onclick="closeDueModal()">×</button>
+          <h2>Payment Information</h2>
+          <div class="due-images-container">
+            <img
+              src="https://raw.githubusercontent.com/fafoysal/sensix/main/01955952991%20.png"
+              alt="01955952991 "
+              class="due-image"
+            />
+            <img
+              src="https://raw.githubusercontent.com/fafoysal/sensix/main/01607255164.png"
+              alt="01607255164"
+              class="due-image"
+            />
+          </div>
+          <p id="dueMethodInfo"></p>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer>
       <p>DEV: FOYSAL</p>
@@ -133,8 +156,19 @@
 
       function continuePayment() {
         const methodName = document.getElementById("modalTitle").textContent;
-        alert(`01955952991 ${methodName} payment...`);
         closePaymentModal();
+        showDueModal(methodName);
+      }
+
+      function showDueModal(methodName) {
+        document.getElementById(
+          "dueMethodInfo"
+        ).textContent = `Payment Method: ${methodName}`;
+        document.getElementById("dueModal").classList.add("active");
+      }
+
+      function closeDueModal() {
+        document.getElementById("dueModal").classList.remove("active");
       }
 
       // Close modal when clicking outside
@@ -146,10 +180,19 @@
           }
         });
 
+      document
+        .getElementById("dueModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            closeDueModal();
+          }
+        });
+
       // Close modal with Escape key
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
           closePaymentModal();
+          closeDueModal();
         }
       });
 
@@ -179,6 +222,71 @@
         to {
           transform: scale(4);
           opacity: 0;
+        }
+      }
+
+      /* DUE MODAL STYLES */
+      .due-modal {
+        position: relative;
+        background: rgb(33, 214, 255);
+        border-radius: 15px;
+        padding: 30px;
+        max-width: 500px;
+        width: 90%;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        animation: slideUp 0.3s ease-out;
+      }
+
+      .due-modal-content {
+        position: relative;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: #666;
+      }
+
+      .due-modal h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .due-images-container {
+        display: flex;
+        gap: 15px;
+        margin: 20px 0;
+        justify-content: center;
+      }
+
+      .due-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .due-modal p {
+        text-align: center;
+        color: #555;
+        margin-top: 15px;
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
         }
       }
     </style>
